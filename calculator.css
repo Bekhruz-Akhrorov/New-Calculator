@@ -1,0 +1,81 @@
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+.calculator{
+    background-color: #222;
+    border-radius: 16px;
+    padding: 16px;
+}
+.display{
+    background-color: black;
+    text-align: right;
+    color: rgb(7, 241, 7);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    width: 302px;
+    overflow-x: auto;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 72px);
+    gap: 10px;
+}
+button{
+    background-color: #444;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #99d49e;
+}
+.equal{
+    background-color: green;
+    grid-column: span 2;
+}
+.operator{
+    background-color: orange;
+    color: white;
+}
+.mode{
+    background-color: silver;
+}
+.clear{
+    background-color: red;
+    border-radius: 8px;
+}
+body.light{
+    background-color: white;
+}
+body.light .display{
+    background-color: paleturquoise;
+    color: seashell;
+}
+body.light .calculator{
+    background-color: lightblue;
+}
+body.light button{
+    background-color: azure;
+    color: silver;
+}
+body.light .operator{
+    background-color: antiquewhite;
+}
+body.light .equal{
+    background-color: rgb(208, 242, 158);
+}
+body.light .clear{
+    background-color: palevioletred;
+}
+body.light .deleteLast{
+    background-color: aqua;
+}

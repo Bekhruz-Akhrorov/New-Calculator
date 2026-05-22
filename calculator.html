@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    </head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()">⌫</button>
+            <button onclick="showInDisplay('%')">%</button>
+            <button class="operator" onclick="showInDisplay('/')">/</button>
+
+            <button onclick="showInDisplay('7')">7</button>
+            <button onclick="showInDisplay('8')">8</button>
+            <button onclick="showInDisplay('9')">9</button>
+            <button class="operator" onclick="showInDisplay('*')">*</button>
+
+            <button onclick="showInDisplay('4')">4</button>
+            <button onclick="showInDisplay('5')">5</button>
+            <button onclick="showInDisplay('6')">6</button>
+            <button class="operator" onclick="showInDisplay('-')">-</button>
+
+            <button onclick="showInDisplay('1')">1</button>
+            <button onclick="showInDisplay('2')">2</button>
+            <button onclick="showInDisplay('3')">3</button>
+            <button class="operator" onclick="showInDisplay('+')">+</button>
+
+            <button onclick="showInDisplay('0')">0</button>
+            <button onclick="showInDisplay('.')">.</button>
+            <button onclick="calculate()" class="equal">=</button>
+
+            <button onclick="square()"class="operator">x²</button>
+            <button onclick="squareRoot()" class="operator">√</button>
+            <button onclick="cube()" class="operator">x³</button>
+            <button onclick="cubeRoot()" class="operator">∛</button>
+            <button onclick="factorial()" class="operator">n!</button>
+            <button class="operator" onclick="changeSign()">±</button>
+            <button onclick="showInDisplay('00')">00</button>
+            <button onclick="changeMode ()" class="mode">🌚🌝</button>
+        </div>
+    </div>
+
+<script src="calculator.js"></script>
+</body>
+</html>
